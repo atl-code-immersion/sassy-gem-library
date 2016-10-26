@@ -1,0 +1,45 @@
+@import wells
+
+$primary-color: #336699
+$secondary-color: #108B26
+$font-stack: Arial, Helvetica, sans-serif
+$two-hundo: 200px
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+
+h1
+	color: $primary-color + $secondary-color
+
+ul
+	li
+		font-family: $font-stack
+		width: $two-hundo/2
+		a
+			color: $secondary-color
+	.special
+		color: $primary-color
+
+.box
+	+border-radius(10px)
+	background: rgba($primary-color,0.7)
+
+.contain
+	width: 100%
+
+.article
+	float: left
+	width: 600px / 960px * 100%
+
+.aside
+	float: right
+	width: 300px / 960px * 100%
+
+
+
+
+
